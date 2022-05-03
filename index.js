@@ -1,49 +1,24 @@
-function TitleContent() {
-    return <h1>My name is Title</h1>;
-}
-
-function MainContent() {
-    return (
-        <nav>
-            <TitleContent />
+const mainContent = (
+    <div>
+        <header>
+            <img src="./react-logo.png" />
+            <h3>React Course - Project 1</h3>
+        </header>
+        <div className="information">
+            <h1>Fun facts about React</h1>
             <ul>
-                <li>Menu</li>
-                <li>About</li>
-                <li>Contact</li>
+                <li>Was first released in 2013</li>
+                <li>Was originally created by Jordan Walke</li>
+                <li>Has well over 100K stars on GitHub</li>
+                <li>Is maintained by Facebook</li>
+                <li>
+                    Powers thousands of enterprise apps, including mobile apps{" "}
+                </li>
             </ul>
-        </nav>
-    );
-}
+        </div>
+    </div>
+);
 
-ReactDOM.render(MainContent(), document.getElementById("root"));
+ReactDOM.render(mainContent, document.getElementById("root"));
 
-// How to replace ReactDOM.render in Vanilla JS>>>>
-const root = document.getElementById("root");
-const title = document.createElement("h1");
-title.textContent = "Hello Vanilla JS";
-title.classList.add("header");
-root.appendChild(title);
-
-// ! Nots
-// * How to call the function into JSX?
-// Solve: <FunctionName />
-
-// ? ========== Start of - Declarative vs Imparative ==========
-// Declarative : Just tell me what you need to do?
-// The Computer will do it instead of you
-// Imparative: You do what you need in Computer without Instractions
-// * Exmaple
-// Dec: ReactDOM.render(MainContent(), document.getElementById("root"));
-// Imp:
-// const root = document.getElementById("root");
-// const title = document.createElement("h1");
-// title.textContent = "Hello Vanilla JS";
-// title.classList.add("header");
-// root.appendChild(title);
-// ? ========== End of - Declarative vs Imparative ==========
-
-//   Hello
-// * Hello
-// ! Hello
-// ? Hello
-// TODO Hello
+// document.getElementById("root").append(JSON.stringify(mainContent));
