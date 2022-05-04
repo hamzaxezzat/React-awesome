@@ -1,4 +1,7 @@
-function Page() {
+import Header from "./Header";
+import Body from "./Body";
+import Footer from "./Footer";
+function App() {
     return (
         <div>
             <Header />
@@ -8,4 +11,4 @@ function Page() {
     );
 }
 
-ReactDOM.render(<Page />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

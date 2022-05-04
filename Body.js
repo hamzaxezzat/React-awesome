@@ -1,4 +1,4 @@
-function Body() {
+export default function Body() {
     return (
         <section className="information">
             <h1>Fun facts about React</h1>

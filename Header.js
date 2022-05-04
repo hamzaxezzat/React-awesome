@@ -1,4 +1,4 @@
-function Header() {
+export default function Header() {
     return (
         <nav>
             <img src="./react-logo.png" />
